@@ -1,0 +1,83 @@
+:root {
+  --vf-red: #e60000;
+  --vf-red-dark: #cc0000;
+  --vf-red-light: #ff3333;
+  --vf-black: #000000;
+  --vf-white: #ffffff;
+  --vf-gray-50: #f7f7f7;
+  --vf-gray-100: #efefef;
+  --vf-gray-200: #e0e0e0;
+  --vf-gray-300: #c8c8c8;
+  --vf-gray-400: #a4a4a4;
+  --vf-gray-500: #808080;
+  --vf-gray-600: #5c5c5c;
+  --vf-gray-700: #404040;
+  --vf-gray-800: #262626;
+  --vf-gray-900: #0a0a0a;
+  --vf-blue: #006dfe;
+  --vf-green: #008744;
+  --vf-orange: #ffa700;
+  --vf-font: 'VodafoneRg', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --vf-radius: 8px;
+  --vf-radius-lg: 12px;
+  --vf-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --vf-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --vf-transition: 0.2s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--vf-font);
+  background: var(--vf-gray-50);
+  color: var(--vf-gray-900);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--vf-red);
+  text-decoration: none;
+  transition: color var(--vf-transition);
+}
+
+a:hover {
+  color: var(--vf-red-dark);
+}
+
+button {
+  font-family: var(--vf-font);
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: var(--vf-font);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--vf-gray-300);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--vf-gray-400);
+}
